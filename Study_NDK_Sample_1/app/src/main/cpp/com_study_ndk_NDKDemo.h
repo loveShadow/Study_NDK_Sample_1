@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jint JNICALL Java_com_study_ndk_NDKDemo_sum
   (JNIEnv *, jclass, jint, jint);
 
+/*
+ * Class:     com_study_ndk_NDKDemo
+ * Method:    mult
+ * Signature: (I)I
+ */
+JNIEXPORT jint JNICALL Java_com_study_ndk_NDKDemo_mult
+  (JNIEnv *, jclass, jint);
+
 #ifdef __cplusplus
 }
 #endif

@@ -2,6 +2,7 @@ package com.study.ndk;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 NDKDemo.sum(3, 5);
+
+                int result = NDKDemo.mult(7);
+                Log.d("ZHAOLI", "result = " + result);
             }
         });
     }

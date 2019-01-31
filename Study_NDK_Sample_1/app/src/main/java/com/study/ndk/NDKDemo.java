@@ -12,4 +12,12 @@ public class NDKDemo {
      * @return 和
      */
     public static native int sum(int arg1, int arg2);
+
+    /**
+     * 求积乘法
+     * @param arg1 参数1
+     * 另外一个乘数从Android侧获取
+     * @return 积
+     */
+    public static native int mult(int arg1);
 }
